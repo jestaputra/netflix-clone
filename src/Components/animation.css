@@ -1,0 +1,47 @@
+#listHover::after {
+  content: "";
+  width: 0;
+  height: 2.1px;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  background-color: white;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+#listHover:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+#scrollBar::-webkit-scrollbar{
+  display: none;
+}
+
+#box-banner::after{
+  content: "";
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.722), rgba(0, 0, 0, 0.136));
+}
+
+#box-banner img{
+  transition: all .3s ease-in-out;
+}
+
+#box-banner:hover img{
+  transform: scale(1.1);
+}
+
+#listMovie #info{
+  transition: all .3s ease-in-out;
+}
+
+#listMovie:hover #info{
+  height: 110px;
+  padding: 10px ;
+  opacity: 1;
+}
